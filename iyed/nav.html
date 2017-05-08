@@ -1,0 +1,40 @@
+				
+<?php // redirect page of not login in 
+if ( defined( 'RESTRICTED' ) ) {
+				if ( !isset( $_SESSION['login'] ) ) {
+				  header( 'Location: index.php' );
+				  exit();
+				}
+			}
+?>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+
+</head>
+<body>
+<div class="wrapper row2">
+  <nav id="mainav" class="hoc clear"> 
+
+  <ul class="clear">
+      <li class="active"><a href="admin.php">Home</a></li>
+     
+      <li><a class="drop" href="#">View Ticket</a>
+        <ul>
+          <li><a href="#">Ticket 1</a></li>
+      
+          <li><a href="#">Ticket 2</a></li>
+        </ul>
+      </li>
+    
+   
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">About Us</a></li>
+	 
+    </ul>
+	 
+  </nav>
+   
+</div> 
+</body>
+</html>
